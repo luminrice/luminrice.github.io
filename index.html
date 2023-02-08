@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/9.0.0/swiper-bundle.css"
         integrity="sha512-sOfEZXsVON8ymFW3Za9EYQrV3xMJhfcT42g+qUP/thg8MuH26BGvrc2484SkZMczKOkpi1haAfSs591sUFfvCQ=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <script src="./assets/js/index.js"></script> 
+    <script src="./assets/js/index.js"></script>
 
     <link rel="stylesheet" href="./assets/css/index.css">
 
@@ -23,21 +23,40 @@
 <body>
     <!-- __nav -->
     <nav id="theNav">
-        <img class="logo" src="./assets/images/lumin.svg" alt="Lumin" srcset=""
-            onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
-        <div class="nav_links">
-            <a href="#products">ထုတ်ကုန်</a>
-            <a href="#branch">ဆိုင်ခွဲ</a>
-            <a href="https://fb.com/profile.php?id=100090256446621" target="_blank"><img style="height: 30px;" src="./assets/images/facebook.svg" alt="" srcset=""></a>
+        <div class="m-container" style="
+        display: flex;
+        justify-content: space-between;
+        align-items: center;">
+            <img class="logo" src="./assets/images/lumin.svg" alt="Lumin" srcset=""
+                onclick="window.scrollTo({ top: 0, behavior: 'smooth' })">
+            <div class="nav_links">
+                <a href="#products">ထုတ်ကုန်</a>
+                <a href="#branch">ဆိုင်ခွဲ</a>
+                <a href="https://fb.com/profile.php?id=100090256446621" target="_blank"><img style="height: 30px;"
+                        src="./assets/images/facebook.svg" alt="" srcset=""></a>
+            </div>
         </div>
     </nav>
-    
+
     <header class="header">
-        <div id="head_bags">
+        <!-- <div id="head_bags">
             <img src="./assets/images/bag.png" alt="" srcset="">
             <img src="./assets/images/bag.png" alt="" srcset="">
             <img src="./assets/images/bag.png" alt="" srcset="">
+        </div> -->
+        <div>
+            <center>
+                <div class="warr">
+                    <img id="a" src="./assets/images/100/1.svg" alt="">
+                    <img id="b" src="./assets/images/100/2.svg" alt="">
+                    <img id="c" src="./assets/images/100/3.svg" alt="">
+                </div>
+            </center>
+            <center style="padding-top: 50px; color: #d48a00;">ရခိုင်ပြည်နယ် ၏ နံပါတ်(၁)<Br />
+                အကောင်းဆုံး ပေါ်ဆန်းမွှေးရှယ်
+            </center>
         </div>
+
     </header>
     <div style="
     background-image: url('./assets/images/rice_farming.webp');
@@ -48,7 +67,7 @@
             <center>
                 <h2>ထုတ်ကုန်များ</h2>
             </center>
-            <div id="product_detail">
+            <div id="product_detail" class="m-container">
                 <div>
                     <div class="img">
                         <img src="./assets/images/bag.png" alt="">
@@ -56,7 +75,7 @@
 
                     <div class="info">
                         <h3>ပေါ်ဆန်းမွှေးရှယ်</h3>
-                        ဟောင်း/သစ်<br/>
+                        ဟောင်း/သစ်<br />
                         12kg, 24kg, 48kg
                     </div>
                 </div>
@@ -83,7 +102,7 @@
     </div>
 
     <!-- __branch -->
-    <div id="branch" style="padding:100px 0px">
+    <div id="branch" style="padding:100px 0px" class="m-container">
         <center>
             <h2>ဆိုင်ခွဲများ</h2>
         </center>
@@ -112,7 +131,7 @@
         </a>
     </div>
     <footer>
-        <center>eat the best<br/>luminrice.com</center>
+        <center>eat the best<br />luminrice.com</center>
     </footer>
     <script src="./assets/js/footer.js"></script>
 </body>
