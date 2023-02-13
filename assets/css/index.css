@@ -49,6 +49,17 @@ a {
     padding: 0px 10vw;
     max-width: 500px;
     margin: auto;
+    filter: brightness(1.08);
+}
+.reflact {
+    -webkit-transform: scaleY(-1);
+    transform: scaleY(-1);
+    margin-top: -30px !important;
+    height: 120px;
+    opacity: 0.6;
+    -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 1), rgba(0, 0, 0, 0));
+    -webkit-mask-repeat: no-repeat;
+    -webkit-mask-position: top, bottom;
 }
 #head_bags > * {
     flex: 0.24;
@@ -69,14 +80,19 @@ a {
 #product_detail > * {
     background-color: rgba(255, 255, 255, 0.7);
     display: flex;
-    padding: 20px;
+    /* align-items: flex-end; */
+    padding: 10px;
     margin: 20px 10px;
     border-radius: 1rem;
     color: #000000;
     backdrop-filter: blur(8px);
 }
-#product_detail > * .img {
+
+#product_detail > *>*{
     flex: 1;
+}
+#product_detail > * .img {
+    flex:0.3;
     height: 200px;
     display: flex;
     justify-content: flex-end;
@@ -116,13 +132,13 @@ footer {
 }
 .warr #a {
     animation-name: a;
-    animation-duration: 10s;
+    animation-duration: 20s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
 .warr #b {
     animation-name: b;
-    animation-duration: 10s;
+    animation-duration: 30s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
 }
