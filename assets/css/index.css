@@ -40,18 +40,27 @@ a {
     background-size: cover; */
     padding-top: 20vh;
     padding-bottom: 8vh;
-    display: flex;
-    align-items: flex-end;
-    justify-content: center;
 }
 #head_bags {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     justify-content: center;
     align-items: flex-end;
+    padding: 0px 10vw;
+    max-width: 500px;
+    margin: auto;
+}
+#head_bags > * {
+    flex: 0.24;
+    height: 200px;
+    display: flex;
+    justify-content: center;
+    overflow: hidden;
 }
 #head_bags img {
-    max-height: 200px;
+    object-fit: contain;
+    height: inherit;
+    position: absolute;
 }
 .w_w {
     padding: 80px 0px;
@@ -96,8 +105,9 @@ footer {
     margin: auto;
 }
 .warr {
-    height: 140px;
-    margin-left: -140px;
+    height: 200px;
+    /* width: 240px; */
+    margin-left: -200px;
 }
 
 .warr > * {
